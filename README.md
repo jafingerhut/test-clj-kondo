@@ -18,6 +18,15 @@ $ clojure -M -m test-clj-kondo.main foo.edn
 Read edn file with return type class clojure.lang.PersistentArrayMap from file 'foo.edn'
 ```
 
+
+# Parsing a JSON-RPC file that is the stdin or stdout of an LSP server
+
+```bash
+clojure -M -m test-clj-kondo.jsonrpc clojure-lsp-stdin.txt > stdin.edn
+clojure -M -m test-clj-kondo.jsonrpc clojure-lsp-stdout.txt > stdout.edn
+```
+
+
 # License
 
 Copyright © 2022 Andy Fingerhut
